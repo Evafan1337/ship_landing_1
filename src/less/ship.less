@@ -1,0 +1,335 @@
+.ship {
+	background: rgba(220,220,220,1);
+	padding-bottom: 100px;
+}
+
+.ship--z46 {
+	background: white;
+}
+
+.ship__inner--z46 {
+	backgroud: white;
+}
+
+.ship__preview {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 1100px;
+}
+
+.ship__preview--z23 {
+	background: url("../../src/images/jpg_z-23_preview.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ship__preview--z52 {
+	min-height: 800px;
+	// min-height: 9px;
+	background: url("../../src/images/jpg_z-52_1.jpg");
+	background-repeat: no-repeat;
+	// background-size: 55%;
+	// background-size: cover;
+	background-size: contain;
+	// background-position-y: 75px;
+	background-position-x: center;
+}
+
+.ship__preview--z46 {
+	min-height: 750px;
+	// min-height: 9px;
+	background: url("../../src/images/jpg_z46_preview.jpg");
+	background-repeat: no-repeat;
+	// background-size: 55%;
+	// background-size: cover;
+	background-size: contain;
+	// background-position-y: 75px;
+	background-position-x: center;
+}
+
+.ship__preview--z6 {
+	background: url("../../src/images/jpg_z6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ship__preview::before {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	content: '';
+	// background: linear-gradient( rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.75) );
+	background: linear-gradient( rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.35) )
+}
+
+.ship__preview--z52::before {
+	background: linear-gradient( rgba(255, 255, 255, 0.25) 40%, rgba(220, 220, 220, 1) );
+}
+
+.ship__preview--z46::before {
+	background: linear-gradient( rgba(220, 220, 220, 1), rgba(255, 255, 255, 0.15) );
+}
+
+.ship__preview--z6::before {
+	background: linear-gradient( rgba(220, 220, 220, 1), rgba(255, 255, 255, 0.15) );
+}
+
+.ship__inner {
+	padding-top: 50px;
+}
+
+.ship__header {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	// font-size: 36px;
+	color: white;
+	margin-top: 0;
+    // padding-top: 550px;
+    font-size: 52px;
+    text-shadow: 0 2px black;
+}
+
+.ship__info-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.ship__image-container {
+	overflow:hidden;	
+}
+
+.ship__image {
+	position: relative;
+	// border: 1px solid black;
+	// height: 120%;
+	// min-height: 100%;
+	// width: 120%;
+	transition-duration: 500ms;
+}
+
+.ship__image:hover {
+	transform: scale(1.1);
+	// background-color: rgba(100,100,100,0.5);
+}
+
+.ship__info-row2 .ship__image:hover{
+	transform: scale(1);
+}
+
+.ship__image::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100,100,100,0.5);
+}
+
+.ship__image:hover .ship__image::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100,100,100,0.5);
+}
+
+.ship__image-container--z23-first {
+	width: 60%;
+	height: 60%;
+}
+
+.ship__image-container--z23-second {
+	width: 35%;
+	height: 35%;
+}
+
+.ship__container--z23-third {
+	width: 50%;
+	height: 50%;
+}
+
+.ship__text {
+	text-indent: 0;
+}
+
+.ship__text--z-23 {
+	// text-indent: 0;
+	text-align: left;
+	width: 30%;
+}
+
+.ship__info-list {
+	margin-top: 5px;
+	width: 49%;
+}
+
+.ship__info-header {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.ship__info-header--z23-row1-1 {
+	// margin-bottom: 20px;
+}
+
+.ship__info-divide-row1-1 {
+	margin-top: 10px;
+}
+
+.ship__info-header--z23-row1-2 {
+	// margin-top: 20px;
+	margin-top: 0;
+}
+
+.ship__info-list-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ship__weapon-text {
+	color: white;
+}
+
+.ship__info-row2 {
+	margin-top: 100px;
+	padding-bottom: 0;
+}
+
+.ship__info-header--z23-row2 {
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+
+.ship__weapon-container {
+	margin-bottom: 50px;
+	display: flex;
+	min-height: 550px;
+	justify-content: center;
+}
+
+.ship__weapon-container--m42 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_m42_2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ship__weapon-container--flak30 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flak_30.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.ship__weapon-container--flak1942 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%),  url("../../src/images/jpg_flak_1942.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.ship__weapon-container--127SK_C_34 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_12_7_cm_SK_C_34_naval_gun.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ship__weapon-container--flak-m44 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flakm44.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	// background-position-y: -100px;
+}
+
+.ship__weapon-container--gerat58 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_gerat58.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ship__weapon-text {
+	text-indent: 0;
+	width: 70%;
+	align-self: center;
+}
+
+.ship__table-data-list {
+	margin-top: 75px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.ship__table-data-section {
+	width: 47%;
+	border: 2px solid black;
+    padding: 10px;
+}
+
+.ship__table-data-section--orders {
+	width: 47%;
+}
+
+.ship__table-data-elem {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.ship__table-data-value {
+	margin-left: 0;
+}
+
+.ship__exist-weapon {
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	text-decoration: none;
+	// list-style-type: square;
+	font-size: 32px;
+	color: black;
+	display: block;
+	width: 85%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.ship__info-row3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.ship__config-elem {
+	display: block;
+}
+
+.ship__info-row2--z52,
+.ship__info-row2--z46 {
+	padding-bottom: 50px;
+}
+
+.ship__info-row3 h4:first-child {
+	position: relative;
+	// color: red;
+}
+
+.ship__info-row3 h4:first-child::before {
+	position: absolute;
+    content: '';
+    top: 150%;
+    left: 300%;
+    width: 230px;
+    height: 230px;
+    background-image: url(../../src/icons/svg_config.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}

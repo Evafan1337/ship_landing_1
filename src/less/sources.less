@@ -1,0 +1,60 @@
+.sources {
+
+}
+
+.sources__inner {
+
+}
+
+.sources__preview {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 1100px;
+	background: url("../../src/images/z_39_3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.sources__preview::before {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	content: '';
+	// background: linear-gradient( rgba(220, 220, 220, 1), rgba(255, 255, 255, 0.15) );
+	background-image: linear-gradient(to bottom, rgba(220, 220, 220, 1),rgba(170, 170, 170, 0.8) ,rgba(170, 170, 170, 0.8), rgba(255, 255, 255, 1));
+}
+
+.sources__header {
+	position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    font-size: 52px;
+    text-shadow: 0 2px black;
+}
+
+.sources__list {
+	margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 2px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sources__link {
+	display: block;
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+}
+
+.sources__list-elem {
+	margin-bottom: 15px;
+}

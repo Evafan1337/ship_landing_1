@@ -1,0 +1,221 @@
+
+@media (max-width: 940px){
+
+	// h1,
+	// h2,
+	// h3,
+	// h4,
+	// section,
+	// div{
+
+	body {
+		font-size: 16px;
+	}
+
+	big {
+		font-size: 24px;
+	}
+
+	*{
+		// outline: 1px solid red;
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.header__inner {
+		flex-direction: column;
+    	justify-content: space-evenly;
+    	min-height: 150px;
+	}
+
+	.header__navigation {
+		width: 80%;
+    	justify-content: space-evenly;
+	}
+
+	.preview {
+		// background-attachment: fixed;
+		background-position: center;
+	}
+
+	.preview__header {
+		padding-left: 0;
+	    // font-size: 26px;
+	    font-size: 36px;
+	    line-height: 44px;
+	    // line-height: 36px;
+	}
+
+
+	.contents {
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%), url(../../src/images/jpg_z-41year.jpg);
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size:cover;
+	}
+
+	.contents__additional-link,
+	.contents__link {
+		font-size: 22px;
+	}
+
+	.article-preview__text {
+		text-align: left;
+		line-height: 28px;
+	}
+
+	// .article-preview__text {
+	// 	width: 90%;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
+
+	.ship__info-list {
+		width: 100%;
+	}
+
+	.ship__info-row3 h4:first-child::before {
+		display: none;
+	}
+
+	.ship__preview {
+		min-height: 515px;
+		// background-image: linear-gradient(to bottom, rgba(220, 220, 220, 1),rgba(170, 170, 170, 0.1) ,rgba(170, 170, 170, 0.1), rgba(220, 220, 220, 1));
+	}
+
+	.ship__preview--z23 {
+		background-size: 100% auto;
+		// min-height: auto;
+		// background-position-x: -715px;
+		// background-size: contain;
+		// min-height: 610px;
+	}
+
+	.ship__preview--z23::before {
+		// background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.35));
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),rgba(247, 247, 247, 1) ,rgba(170, 170, 170, 0.35),rgba(170, 170, 170, 0.55), rgba(220, 220, 220, 1));
+	}
+
+	.ship__preview--z52 {
+		background-position: center;
+    	background-size: contain;
+    	min-height: 392px;
+	}
+
+	.ship__preview--z52::before {
+
+	}
+
+	.ship__container--z23-first,
+	.ship__container--z23-second,
+	.ship__container--z23-third{
+		width: 100%;
+		margin-bottom: 10px;
+		border: 2px solid black;
+	}
+
+	// .ship__table-data-section {
+	// 	width: 90%;
+	// }
+
+	.ship__table-data-section {
+		width: 80%;
+		margin-left: auto;
+    	margin-right: auto;
+    	font-size: 16px;
+	}
+
+	.ship__table-data-section--orders {
+		margin-bottom: 50px;
+	}
+
+	// .ship__weapon-container {
+	// 	width: 90%;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
+
+	// .ship__info-row3 {
+	// 	width: 90%;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
+
+	// .ship__text {
+	// 	width: 90%;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
+
+	.sources__header {
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	.sources__inner {
+		width: 95%;
+	}
+
+	.sources__link {
+		font-size: 19px;
+	}
+
+	.footer__contacts {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__author {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.preview {
+		background-position-x: -50px;
+		min-height: 650px;
+	}
+
+	.preview__header {
+		padding-left: 0;
+	    font-size: 26px;
+	    // font-size: 36px;
+	    // line-height: 44px;
+	    line-height: 36px;
+	}
+
+	.preview__header {
+		padding-top: 530px;
+	}
+
+	.ship {
+		padding-bottom: 50px;
+	}
+
+	.ship__preview--z23 {
+		min-height: 345px;
+	}
+
+	.ship__inner{
+		padding-top: 0;
+	}
+
+	.ship__weapon-text {
+		width: 85%;
+	}
+
+	.ship__preview--z46 {
+		min-height: 285px;
+		background-position-y: center;
+	}
+
+	.ship__table-data-section {
+		margin-left: 0;
+    	margin-right: 0;
+    	width: 100%;
+    	font-size: 15px;
+	}
+}

@@ -1,0 +1,1430 @@
+.article-preview {
+  padding-top: 150px;
+}
+.article-preview__header {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+}
+.article-preview__header::before,
+.article-preview__header::after {
+  content: "";
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  /* background: #6CBD83; */
+  background: #000;
+  border-width: 0 10px;
+  display: none;
+}
+.article-preview__header::before {
+  margin-left: -100%;
+}
+.article-preview__header::after {
+  margin-right: -100%;
+}
+.article-preview__text {
+  text-align: justify;
+  line-height: 34px;
+  text-indent: 20px;
+}
+.article-preview__text--capital {
+  text-indent: 0;
+}
+.article-preview__capital {
+  font-size: 48px;
+}
+
+.contents {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%), url("../../src/images/jpg_z-41year.jpg");
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,d6d6d6+24,d6d6d6+41,7db9e8+60 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+18,ffffff+33,ffffff+80&0+0,0.8+9,1+13,1+34,0.8+44,0+100 */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__navigation-header {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.contents__navigation-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contents__additional-list {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+}
+.contents__additional-link,
+.contents__link {
+  text-decoration: none;
+  color: black;
+}
+.contents__link {
+  font-weight: bold;
+}
+.contents__navigation-elem {
+  margin-bottom: 10px;
+}
+.contents__additional-elem {
+  margin-bottom: 3px;
+}
+.contents__link {
+  font-size: 24px;
+}
+.contents__additional-link {
+  font-size: 24px;
+}
+
+.footer {
+  background-color: black;
+  min-height: 220px;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer__contacts-elem {
+  width: 70px;
+  height: 70px;
+  color: transparent;
+}
+.footer__contacts-elem--github {
+  background-image: url("../../src/icons/svg_github.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--vk {
+  background-image: url("../../src/icons/svg_vk.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--telegram {
+  background-image: url("../../src/icons/svg_telegram.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--email {
+  background-image: url("../../src/icons/svg_email.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--skype {
+  background-image: url("../../src/icons/svg_skype.svg");
+  background-size: cover;
+}
+.footer__author {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  overflow: hidden;
+}
+.footer__author:before,
+.footer__author:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 30%;
+  height: 3px;
+  /* background: #6CBD83; */
+  background: #fff;
+  border: solid #fff;
+  border-width: 0 10px;
+}
+.footer__author:after {
+  margin-right: -100%;
+}
+.footer__author:before {
+  margin-left: -100%;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+p {
+  line-height: 32px;
+  text-indent: 20px;
+}
+img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+big {
+  font-size: 48px;
+}
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: black;
+  color: white;
+}
+.header__inner {
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  padding-left: 70px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+.header__title::before {
+  position: absolute;
+  content: '';
+  width: 65px;
+  height: 65px;
+  left: 0;
+  top: -20px;
+  background-image: url(../../src/icons/svg_naval_white.svg);
+  background-size: cover;
+}
+.header__navigation {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 940px) {
+  body {
+    font-size: 16px;
+  }
+  big {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .header__inner {
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 150px;
+  }
+  .header__navigation {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .preview {
+    background-position: center;
+  }
+  .preview__header {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .contents {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%), url(../../src/images/jpg_z-41year.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .contents__additional-link,
+  .contents__link {
+    font-size: 22px;
+  }
+  .article-preview__text {
+    text-align: left;
+    line-height: 28px;
+  }
+  .ship__info-list {
+    width: 100%;
+  }
+  .ship__info-row3 h4:first-child::before {
+    display: none;
+  }
+  .ship__preview {
+    min-height: 515px;
+  }
+  .ship__preview--z23 {
+    background-size: 100% auto;
+  }
+  .ship__preview--z23::before {
+    background-image: linear-gradient(to bottom, #ffffff, #f7f7f7, rgba(170, 170, 170, 0.35), rgba(170, 170, 170, 0.55), #dcdcdc);
+  }
+  .ship__preview--z52 {
+    background-position: center;
+    background-size: contain;
+    min-height: 392px;
+  }
+  .ship__container--z23-first,
+  .ship__container--z23-second,
+  .ship__container--z23-third {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+  .ship__table-data-section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+  .ship__table-data-section--orders {
+    margin-bottom: 50px;
+  }
+  .sources__header {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .sources__inner {
+    width: 95%;
+  }
+  .sources__link {
+    font-size: 19px;
+  }
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__author {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .preview {
+    background-position-x: -50px;
+    min-height: 650px;
+  }
+  .preview__header {
+    padding-left: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .preview__header {
+    padding-top: 530px;
+  }
+  .ship {
+    padding-bottom: 50px;
+  }
+  .ship__preview--z23 {
+    min-height: 345px;
+  }
+  .ship__inner {
+    padding-top: 0;
+  }
+  .ship__weapon-text {
+    width: 85%;
+  }
+  .ship__preview--z46 {
+    min-height: 285px;
+    background-position-y: center;
+  }
+  .ship__table-data-section {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+.other-ships {
+  padding-top: 75px;
+}
+.other-ships-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.other-ships-elem {
+  margin-bottom: 35px;
+  overflow: hidden;
+  position: relative;
+  min-height: 450px;
+  width: 48%;
+  transition-duration: 350ms;
+}
+.other-ships-elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: inherit;
+}
+.other-ships-elem::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.05) 100%);
+  z-index: 1;
+}
+.other-ships-elem:hover::before {
+  transform: scale(1.2);
+}
+.other-ships-elem--z39 {
+  background: url("../../src/images/jpeg_z39_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.other-ships-elem--z35 {
+  background: url("../../src/images/jpg_z35_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -250px;
+}
+.other-ships-elem--z24 {
+  background: url("../../src/images/jpg_z24_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.other-ships-elem--z25 {
+  background: url("../../src/images/jpg_z25_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.preview {
+  position: relative;
+  background: url("../../src/images/jpg_z-39_1-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  background-position-y: -250px;
+}
+.preview::before {
+  z-index: 1;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.75));
+}
+.preview__header {
+  text-shadow: 0 2px black;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  padding-top: 580px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  text-align: right;
+  font-size: 52px;
+  line-height: 70px;
+  color: white;
+}
+
+.ship {
+  background: #dcdcdc;
+  padding-bottom: 100px;
+}
+.ship--z46 {
+  background: white;
+}
+.ship__inner--z46 {
+  backgroud: white;
+}
+.ship__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1100px;
+}
+.ship__preview--z23 {
+  background: url("../../src/images/jpg_z-23_preview.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ship__preview--z52 {
+  min-height: 800px;
+  background: url("../../src/images/jpg_z-52_1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+.ship__preview--z46 {
+  min-height: 750px;
+  background: url("../../src/images/jpg_z46_preview.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+.ship__preview--z6 {
+  background: url("../../src/images/jpg_z6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__preview::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.35));
+}
+.ship__preview--z52::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.25) 40%, #dcdcdc);
+}
+.ship__preview--z46::before {
+  background: linear-gradient(#dcdcdc, rgba(255, 255, 255, 0.15));
+}
+.ship__preview--z6::before {
+  background: linear-gradient(#dcdcdc, rgba(255, 255, 255, 0.15));
+}
+.ship__inner {
+  padding-top: 50px;
+}
+.ship__header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-size: 52px;
+  text-shadow: 0 2px black;
+}
+.ship__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.ship__image-container {
+  overflow: hidden;
+}
+.ship__image {
+  position: relative;
+  transition-duration: 500ms;
+}
+.ship__image:hover {
+  transform: scale(1.1);
+}
+.ship__info-row2 .ship__image:hover {
+  transform: scale(1);
+}
+.ship__image::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.ship__image:hover .ship__image::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.ship__image-container--z23-first {
+  width: 60%;
+  height: 60%;
+}
+.ship__image-container--z23-second {
+  width: 35%;
+  height: 35%;
+}
+.ship__container--z23-third {
+  width: 50%;
+  height: 50%;
+}
+.ship__text {
+  text-indent: 0;
+}
+.ship__text--z-23 {
+  text-align: left;
+  width: 30%;
+}
+.ship__info-list {
+  margin-top: 5px;
+  width: 49%;
+}
+.ship__info-header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ship__info-divide-row1-1 {
+  margin-top: 10px;
+}
+.ship__info-header--z23-row1-2 {
+  margin-top: 0;
+}
+.ship__info-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.ship__weapon-text {
+  color: white;
+}
+.ship__info-row2 {
+  margin-top: 100px;
+  padding-bottom: 0;
+}
+.ship__info-header--z23-row2 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.ship__weapon-container {
+  margin-bottom: 50px;
+  display: flex;
+  min-height: 550px;
+  justify-content: center;
+}
+.ship__weapon-container--m42 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_m42_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-container--flak30 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flak_30.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ship__weapon-container--flak1942 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flak_1942.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ship__weapon-container--127SK_C_34 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_12_7_cm_SK_C_34_naval_gun.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-container--flak-m44 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flakm44.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ship__weapon-container--gerat58 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_gerat58.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-text {
+  text-indent: 0;
+  width: 70%;
+  align-self: center;
+}
+.ship__table-data-list {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ship__table-data-section {
+  width: 47%;
+  border: 2px solid black;
+  padding: 10px;
+}
+.ship__table-data-section--orders {
+  width: 47%;
+}
+.ship__table-data-elem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ship__table-data-value {
+  margin-left: 0;
+}
+.ship__exist-weapon {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+  display: block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ship__info-row3 {
+  display: flex;
+  flex-direction: column;
+}
+.ship__config-elem {
+  display: block;
+}
+.ship__info-row2--z52,
+.ship__info-row2--z46 {
+  padding-bottom: 50px;
+}
+.ship__info-row3 h4:first-child {
+  position: relative;
+}
+.ship__info-row3 h4:first-child::before {
+  position: absolute;
+  content: '';
+  top: 150%;
+  left: 300%;
+  width: 230px;
+  height: 230px;
+  background-image: url(../../src/icons/svg_config.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+}
+
+.sources__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1100px;
+  background: url("../../src/images/z_39_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sources__preview::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: linear-gradient(to bottom, #dcdcdc, rgba(170, 170, 170, 0.8), rgba(170, 170, 170, 0.8), #ffffff);
+}
+.sources__header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-size: 52px;
+  text-shadow: 0 2px black;
+}
+.sources__list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 2px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.sources__link {
+  display: block;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
+.sources__list-elem {
+  margin-bottom: 15px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+}
+.header__inner {
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  padding-left: 70px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+.header__title::before {
+  position: absolute;
+  content: '';
+  width: 65px;
+  height: 65px;
+  left: 0;
+  top: -20px;
+  background-image: url(../../src/icons/svg_naval_white.svg);
+  background-size: cover;
+}
+.header__navigation {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+}
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+p {
+  line-height: 32px;
+  text-indent: 20px;
+}
+img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+big {
+  font-size: 48px;
+}
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.preview {
+  position: relative;
+  background: url("../../src/images/jpg_z-39_1-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  background-position-y: -250px;
+}
+.preview::before {
+  z-index: 1;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.75));
+}
+.preview__header {
+  text-shadow: 0 2px black;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  padding-top: 580px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  text-align: right;
+  font-size: 52px;
+  line-height: 70px;
+  color: white;
+}
+.contents {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%), url("../../src/images/jpg_z-41year.jpg");
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,d6d6d6+24,d6d6d6+41,7db9e8+60 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+18,ffffff+33,ffffff+80&0+0,0.8+9,1+13,1+34,0.8+44,0+100 */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__navigation-header {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.contents__navigation-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contents__additional-list {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+}
+.contents__additional-link,
+.contents__link {
+  text-decoration: none;
+  color: black;
+}
+.contents__link {
+  font-weight: bold;
+}
+.contents__navigation-elem {
+  margin-bottom: 10px;
+}
+.contents__additional-elem {
+  margin-bottom: 3px;
+}
+.contents__link {
+  font-size: 24px;
+}
+.contents__additional-link {
+  font-size: 24px;
+}
+.ship {
+  background: #dcdcdc;
+  padding-bottom: 100px;
+}
+.ship--z46 {
+  background: white;
+}
+.ship__inner--z46 {
+  backgroud: white;
+}
+.ship__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1100px;
+}
+.ship__preview--z23 {
+  background: url("../../src/images/jpg_z-23_preview.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ship__preview--z52 {
+  min-height: 800px;
+  background: url("../../src/images/jpg_z-52_1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+.ship__preview--z46 {
+  min-height: 750px;
+  background: url("../../src/images/jpg_z46_preview.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+.ship__preview--z6 {
+  background: url("../../src/images/jpg_z6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__preview::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.35));
+}
+.ship__preview--z52::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.25) 40%, #dcdcdc);
+}
+.ship__preview--z46::before {
+  background: linear-gradient(#dcdcdc, rgba(255, 255, 255, 0.15));
+}
+.ship__preview--z6::before {
+  background: linear-gradient(#dcdcdc, rgba(255, 255, 255, 0.15));
+}
+.ship__inner {
+  padding-top: 50px;
+}
+.ship__header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-size: 52px;
+  text-shadow: 0 2px black;
+}
+.ship__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.ship__image-container {
+  overflow: hidden;
+}
+.ship__image {
+  position: relative;
+  transition-duration: 500ms;
+}
+.ship__image:hover {
+  transform: scale(1.1);
+}
+.ship__info-row2 .ship__image:hover {
+  transform: scale(1);
+}
+.ship__image::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.ship__image:hover .ship__image::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.ship__image-container--z23-first {
+  width: 60%;
+  height: 60%;
+}
+.ship__image-container--z23-second {
+  width: 35%;
+  height: 35%;
+}
+.ship__container--z23-third {
+  width: 50%;
+  height: 50%;
+}
+.ship__text {
+  text-indent: 0;
+}
+.ship__text--z-23 {
+  text-align: left;
+  width: 30%;
+}
+.ship__info-list {
+  margin-top: 5px;
+  width: 49%;
+}
+.ship__info-header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ship__info-divide-row1-1 {
+  margin-top: 10px;
+}
+.ship__info-header--z23-row1-2 {
+  margin-top: 0;
+}
+.ship__info-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.ship__weapon-text {
+  color: white;
+}
+.ship__info-row2 {
+  margin-top: 100px;
+  padding-bottom: 0;
+}
+.ship__info-header--z23-row2 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.ship__weapon-container {
+  margin-bottom: 50px;
+  display: flex;
+  min-height: 550px;
+  justify-content: center;
+}
+.ship__weapon-container--m42 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_m42_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-container--flak30 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flak_30.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ship__weapon-container--flak1942 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flak_1942.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ship__weapon-container--127SK_C_34 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_12_7_cm_SK_C_34_naval_gun.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-container--flak-m44 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_flakm44.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ship__weapon-container--gerat58 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.45) 100%), url("../../src/images/jpg_gerat58.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship__weapon-text {
+  text-indent: 0;
+  width: 70%;
+  align-self: center;
+}
+.ship__table-data-list {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ship__table-data-section {
+  width: 47%;
+  border: 2px solid black;
+  padding: 10px;
+}
+.ship__table-data-section--orders {
+  width: 47%;
+}
+.ship__table-data-elem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ship__table-data-value {
+  margin-left: 0;
+}
+.ship__exist-weapon {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+  display: block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ship__info-row3 {
+  display: flex;
+  flex-direction: column;
+}
+.ship__config-elem {
+  display: block;
+}
+.ship__info-row2--z52,
+.ship__info-row2--z46 {
+  padding-bottom: 50px;
+}
+.ship__info-row3 h4:first-child {
+  position: relative;
+}
+.ship__info-row3 h4:first-child::before {
+  position: absolute;
+  content: '';
+  top: 150%;
+  left: 300%;
+  width: 230px;
+  height: 230px;
+  background-image: url(../../src/icons/svg_config.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+}
+.other-ships {
+  padding-top: 75px;
+}
+.other-ships-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.other-ships-elem {
+  margin-bottom: 35px;
+  overflow: hidden;
+  position: relative;
+  min-height: 450px;
+  width: 48%;
+  transition-duration: 350ms;
+}
+.other-ships-elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: inherit;
+}
+.other-ships-elem::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.05) 100%);
+  z-index: 1;
+}
+.other-ships-elem:hover::before {
+  transform: scale(1.2);
+}
+.other-ships-elem--z39 {
+  background: url("../../src/images/jpeg_z39_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.other-ships-elem--z35 {
+  background: url("../../src/images/jpg_z35_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -250px;
+}
+.other-ships-elem--z24 {
+  background: url("../../src/images/jpg_z24_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.other-ships-elem--z25 {
+  background: url("../../src/images/jpg_z25_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sources__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1100px;
+  background: url("../../src/images/z_39_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sources__preview::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: linear-gradient(to bottom, #dcdcdc, rgba(170, 170, 170, 0.8), rgba(170, 170, 170, 0.8), #ffffff);
+}
+.sources__header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-size: 52px;
+  text-shadow: 0 2px black;
+}
+.sources__list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 2px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.sources__link {
+  display: block;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
+.sources__list-elem {
+  margin-bottom: 15px;
+}
+.footer {
+  background-color: black;
+  min-height: 220px;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer__contacts-elem {
+  width: 70px;
+  height: 70px;
+  color: transparent;
+}
+.footer__contacts-elem--github {
+  background-image: url("../../src/icons/svg_github.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--vk {
+  background-image: url("../../src/icons/svg_vk.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--telegram {
+  background-image: url("../../src/icons/svg_telegram.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--email {
+  background-image: url("../../src/icons/svg_email.svg");
+  background-size: cover;
+}
+.footer__contacts-elem--skype {
+  background-image: url("../../src/icons/svg_skype.svg");
+  background-size: cover;
+}
+.footer__author {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  overflow: hidden;
+}
+.footer__author:before,
+.footer__author:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 30%;
+  height: 3px;
+  /* background: #6CBD83; */
+  background: #fff;
+  border: solid #fff;
+  border-width: 0 10px;
+}
+.footer__author:after {
+  margin-right: -100%;
+}
+.footer__author:before {
+  margin-left: -100%;
+}
+@media (max-width: 940px) {
+  body {
+    font-size: 16px;
+  }
+  big {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .header__inner {
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 150px;
+  }
+  .header__navigation {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .preview {
+    background-position: center;
+  }
+  .preview__header {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .contents {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0) 100%), url(../../src/images/jpg_z-41year.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .contents__additional-link,
+  .contents__link {
+    font-size: 22px;
+  }
+  .article-preview__text {
+    text-align: left;
+    line-height: 28px;
+  }
+  .ship__info-list {
+    width: 100%;
+  }
+  .ship__info-row3 h4:first-child::before {
+    display: none;
+  }
+  .ship__preview {
+    min-height: 515px;
+  }
+  .ship__preview--z23 {
+    background-size: 100% auto;
+  }
+  .ship__preview--z23::before {
+    background-image: linear-gradient(to bottom, #ffffff, #f7f7f7, rgba(170, 170, 170, 0.35), rgba(170, 170, 170, 0.55), #dcdcdc);
+  }
+  .ship__preview--z52 {
+    background-position: center;
+    background-size: contain;
+    min-height: 392px;
+  }
+  .ship__container--z23-first,
+  .ship__container--z23-second,
+  .ship__container--z23-third {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+  .ship__table-data-section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+  .ship__table-data-section--orders {
+    margin-bottom: 50px;
+  }
+  .sources__header {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .sources__inner {
+    width: 95%;
+  }
+  .sources__link {
+    font-size: 19px;
+  }
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__author {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .preview {
+    background-position-x: -50px;
+    min-height: 650px;
+  }
+  .preview__header {
+    padding-left: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .preview__header {
+    padding-top: 530px;
+  }
+  .ship {
+    padding-bottom: 50px;
+  }
+  .ship__preview--z23 {
+    min-height: 345px;
+  }
+  .ship__inner {
+    padding-top: 0;
+  }
+  .ship__weapon-text {
+    width: 85%;
+  }
+  .ship__preview--z46 {
+    min-height: 285px;
+    background-position-y: center;
+  }
+  .ship__table-data-section {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    font-size: 15px;
+  }
+}

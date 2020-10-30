@@ -1,0 +1,42 @@
+
+.header {
+	background-color: black;
+	color: white;
+}
+
+.header__inner {
+	min-height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__title {
+	padding-left: 70px;
+	position: relative;
+	text-decoration: none;
+	color: white;
+}
+
+.header__title::before {
+	position: absolute;
+    content: '';
+    width: 65px;
+    height: 65px;
+    left: 0;
+    top: -20px;
+    background-image: url(../../src/icons/svg_naval_white.svg);
+    background-size: cover;
+}
+
+.header__navigation {
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__link {
+	text-decoration: none;
+	color: white;
+	
+}
