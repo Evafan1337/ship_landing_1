@@ -9,13 +9,18 @@
 	<title>Document Title</title>
 </head>
 <body>
+
+	<div id="navBack" class="nav-back">
+		<a href="#toNav" class="nav-back__link">К содержанию</a>
+	</div>
+
 	<header class="header">
 		<div class="header__inner container">
 			<a href="" class="header__title">Немецкие эскадренные миноносцы</a>
-			<nav class="header__navigation">
-				<a href="" class="header__link">Z-23</a>
-				<a href="" class="header__link">Z-46</a>
-				<a href="" class="header__link">Z-52</a>
+			<nav id="navNavigation" class="header__navigation">
+				<a href="#z23" class="header__link links-decorator links-decorator--white">Z-23</a>
+				<a href="z46" class="header__link links-decorator links-decorator--white">Z-46</a>
+				<a href="z52" class="header__link links-decorator links-decorator--white">Z-52</a>
 			</nav>
 		</div>
 	</header>
@@ -29,31 +34,27 @@
 		</div>
 
 		<section class="contents">
-			<div class="contents__inner container">
-				<div class="contents__navigation">
+			<div id="toNav" class="contents__inner container">
+				<div id="menu" class="contents__navigation">
 					<h3 class="contents__navigation-header">Содержание</h3>
 					<ul class="contents__navigation-list">
 						<li class="contents__navigation-elem">
-							<a href="" class="contents__link">Введение</a>
+							<a href="#articlePreview" class="contents__link links-decorator">Введение</a>
 						</li>
 
 						<li class="contents__navigation-elem">
 							<h4 class="contents__navigation-elem-header">Z-23</h4>
 							<ul class="contents__additional-list">
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">История проекта</a>
+									<a href="#z23preview" class="contents__additional-link links-decorator">История проекта</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Боевое применение</a>
+									<a href="#z23stats" class="contents__additional-link links-decorator">Тактико-технические характеристики</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Галерея</a>
-								</li>
-
-								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Гайд World of Warships</a>
+									<a href="#z23weapons" class="contents__additional-link links-decorator">Вооружение</a>
 								</li>
 							</ul>
 						</li>
@@ -62,19 +63,15 @@
 							<h4 class="contents__navigation-elem-header">Z-46</h4>
 							<ul class="contents__additional-list">
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">История проекта</a>
+									<a href="#z46preview" class="contents__additional-link links-decorator">История проекта</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Боевое применение</a>
+									<a href="#z46stats" class="contents__additional-link links-decorator">Тактико-технические характеристики</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Галерея</a>
-								</li>
-
-								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Гайд World of Warships</a>
+									<a href="#z46weapons" class="contents__additional-link links-decorator">Вооружение</a>
 								</li>
 							</ul>
 						</li>
@@ -83,37 +80,25 @@
 							<h4 class="contents__navigation-elem-header">Z-52</h4>
 							<ul class="contents__additional-list">
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">История проекта</a>
+									<a href="#z52preview" class="contents__additional-link links-decorator">История проекта</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Боевое применение</a>
+									<a href="#z52stats" class="contents__additional-link links-decorator">Тактико-технические характеристики</a>
 								</li>
 
 								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Галерея</a>
-								</li>
-
-								<li class="contents__additional-elem">
-									<a href="" class="contents__additional-link">Гайд World of Warships</a>
+									<a href="#z52weapons" class="contents__additional-link links-decorator">Вооружение</a>
 								</li>
 							</ul>
 						</li>
 
-						<li class="contents__navigation-elem">
-							<a href="" class="contents__link">Другие немецкие эсминцы</a>
-						</li>
+						<!-- <li class="contents__navigation-elem">
+							<a href="#otherShips" class="contents__link links-decorator">Другие немецкие эсминцы</a>
+						</li> -->
 
 						<li class="contents__navigation-elem">
-							<a href="" class="contents__link">Статистика и интересные факты</a>
-						</li>
-
-						<li class="contents__navigation-elem">
-							<a href="" class="contents__link">Термины и определения</a>
-						</li>
-
-						<li class="contents__navigation-elem">
-							<a href="" class="contents__link">Использованные материалы и список литературы</a>
+							<a href="#stuff" class="contents__link links-decorator">Использованные материалы и список литературы</a>
 						</li>
 					</ul>
 				</div>
@@ -122,7 +107,7 @@
 
 		<section class="article-preview">
 			<div class="article-preview__inner container">
-				<h3 class="article-preview__header">Введение</h3>
+				<h3 id="articlePreview" class="article-preview__header">Введение</h3>
 				<p class="article-preview__text article-preview__text--capital">
 					<span class="article-preview__capital">Д</span>анный материал призван показать читателям все великолепие и красоту технической мысли. Битву с компромиссами и ограничениями Версальского договора. Ниже будут представлены краткие сводки технических характеристик разных кораблей Кригсмарине времен Второй Мировой Войны, разбавленные большим количеством фотографий тех лет. В дополнение к этому ниже будут представлены гайды по кораблям Z-23, Z-46, Z-52, которые присутствуют в компьютерной игре World of Warships.
 				</p>
@@ -143,13 +128,12 @@
 
 		<section class="ship">
 			<div class="ship__preview ship__preview--z23">
-				<h3 class="ship__header">Z-23</h3>
+				<h3 id="z23" class="ship__header">Z-23</h3>
 			</div>
 
 			<div class="ship__inner container">
 
-				<p class="ship__text">
-					<!-- wft??? -->
+				<p id="z23preview" class="ship__text">
 					<big>Z-23</big> — эсминец ВМС Германии, относился к типу 1936A. Был спущен на воду 15 декабря 1939 года. Основная служба корабля во время Второй мировой войны представляла собой конвоирование союзных кораблей. Эсминец принимал участие в сражении в Бискайском заливе. 12 августа 1944 года вследствие налёта бомбардировщиков ВВС Великобритании получил серьёзные повреждения, после которых так и не был восстановлен. В 1951 году эсминец Z-23 был разобран на металл.
 				</p>
 
@@ -166,7 +150,7 @@
 						<img src="src/images/jpg_z-23_2.jpg" alt="" class="ship__image ship__image--z23-third" width="637" height="450">
 					</div>
 
-					<dl class="ship__info-list">
+					<dl id="z23stats" class="ship__info-list">
 						<h4 class="ship__info-header ship__info-header--z23-row1-1">Исторические данные</h4>
 						<div class="ship__info-list-item">
 							<dt class="ship__info-key">Заложен</dt>
@@ -208,10 +192,10 @@
 					</dl>
 				</div>
 
-				<div class="ship__info-row ship__info-row2">
+				<div id="z23weapons" class="ship__info-row ship__info-row2">
 					<h4 class="ship__info-header ship__info-header--z23-row2">Вооружение</h4>
 					<div class="ship__weapon-container ship__weapon-container--m42">
-						<p class="ship__weapon-text">
+						<p id="skc34" class="ship__weapon-text">
 							<big>15 cm Tbts KC/36</big> — 149,1-миллиметровое корабельное артиллерийское орудие, разработанное и производившееся в Германии. Состояло на вооружении Кригсмарине. Было разработано специально для эскадренные миноносцев. Устанавливалось на эсминцах типа 1936A и 1936A(Mob). Кроме того, в 1942 году этими орудиями был перевооружён лёгкий крейсер «Эмден». Применялось в одиночных щитовых и спаренных башенных установках. Использовалось во Второй мировой войне.
 						</p>
 					</div>
@@ -223,7 +207,7 @@
 					</div>
 
 					<div class="ship__weapon-container ship__weapon-container--flak1942">
-						<p class="ship__weapon-text">
+						<p id="z46m42" class="ship__weapon-text">
 							<big>37-мм орудие SKC/30</big> — немецкое полуавтоматическое зенитное орудие. Применялось на большинстве кораблей Кригсмарине в ходе Второй мировой войны. Характерной особенностью орудия был низкий темп стрельбы в сравнении с автоматическими пушками, но превосходные баллистические характеристики.
 						</p>
 					</div>
@@ -256,8 +240,8 @@
 				<!-- <h3 class="ship__header">Z-46</h3> -->
 			</div>
 
-			<div class="ship__inner container">
-				<p class="ship__text">
+			<div id="z46preview" class="ship__inner container">
+				<p id="z46" class="ship__text">
 					<big>Zerstörer 1941</big> — проект эсминцев Кригсмарине, разрабатывался в проектном бюро главного командования ВМС. Разработка велась на базе проектов эсминцев 1936A и 1936A(Mob). Целью разработки было создание эсминца без выявленных недостатков предыдущих проектов. По этому проекту не было построено ни одного корабля.
 				</p>
 				<div class="ship__table-data">
@@ -291,7 +275,7 @@
 							</div>
 						</div>
 						
-						<div class="ship__table-data-section">
+						<div id="z46stats" class="ship__table-data-section">
 							<h4 class="ship__table-data-header">Общие данные</h4>
 							<div class="ship__table-data-elem">
 								<dt class="ship__table-data-key">Водоизмещение <br> <small>(стандартное/полное)</small></dt>
@@ -320,8 +304,8 @@
 						</div>
 					</dl>
 				</div>
-				<div class="ship__info-row ship__info-row2 ship__info-row2--z46">
-					<h4 class="ship__info-header ship__info-header--z23-row2">Вооружение</h4>
+				<div id="z46weaponsList" class="ship__info-row ship__info-row2 ship__info-row2--z46">
+					<h4 id="z46weapons" class="ship__info-header ship__info-header--z23-row2">Вооружение</h4>
 					<div class="ship__weapon-container ship__weapon-container--127SK_C_34">
 						<p class="ship__weapon-text">
 							<big>12,7 cm SKC/34</big> — 128-миллиметровое корабельное артиллерийское орудие, разработанное и производившееся в Германии. Состояло на вооружении Кригсмарине. Было разработано специально для эскадренные миноносцев. Устанавливалось на эсминцах типов 1934, 1936 и 1936B. Применялось в одиночных щитовых установках. Использовалось во Второй мировой войне.
@@ -329,8 +313,8 @@
 						</p>
 					</div>
 
-					<a href="" class="ship__exist-weapon">37-мм орудий Flak M42</a>
-					<a href="" class="ship__exist-weapon">20-мм орудий SK C/38</a>
+					<a href="#z46m42" class="ship__exist-weapon">37-мм орудие Flak M42</a>
+					<a href="#z46c38" class="ship__exist-weapon">20-мм орудие SK C/38</a>
 				</div>
 
 				<div class="ship__info-row ship__info-row3">
@@ -361,8 +345,8 @@
 				<!-- <h3 class="ship__header">Z-52</h3> -->
 			</div>
 
-			<div class="ship__inner container">
-				<p class="ship__text">
+			<div id="z52preview" class="ship__inner container">
+				<p id="z52" class="ship__text">
 					<big>Zerstörer Typ 1944</big> — эскадренные миноносцы типа 1944 это серия из 7 проектных эскадренных миноносцев Кригсмарине, разработанных в 1943-1944 годах, которые являлись логическим продолжением эскадренного миноносца проекта 1942. В связи с поражениями в войне и нехваткой материалов ни один из кораблей серии построен не был. Заложенный корабль был разобран на стапеле в 1945 году. Ниже будет рассмотрен проект 1942C.
 				</p>
 
@@ -397,7 +381,7 @@
 							</div>
 						</div>
 						
-						<div class="ship__table-data-section">
+						<div id="z52stats" class="ship__table-data-section">
 							<h4 class="ship__table-data-header">Общие данные</h4>
 							<div class="ship__table-data-elem">
 								<dt class="ship__table-data-key">Водоизмещение <br> <small>(стандартное/полное)</small></dt>
@@ -427,8 +411,8 @@
 					</dl>
 				</div>
 
-				<div class="ship__info-row ship__info-row2 ship__info-row2--z52">
-					<h4 class="ship__info-header ship__info-header--z23-row2">Вооружение</h4>
+				<div id="z52weaponsList" class="ship__info-row ship__info-row2 ship__info-row2--z52">
+					<h4 id="z52weapons" class="ship__info-header ship__info-header--z23-row2">Вооружение</h4>
 					<div class="ship__weapon-container ship__weapon-container--gerat58">
 						<p class="ship__weapon-text">
 							<big>5.5 cm/77 (2.17") Gerät 58</big> — немецкое автоматическое зенитное орудие. Предполагалось к установке на многие проектные корабли Кригсмарине. В связи с окончанием Второй мировой войны орудие в серию не пошло. Всего было произведено 3 орудия.
@@ -441,7 +425,7 @@
 						</p>
 					</div>
 
-					<a href="" class="ship__exist-weapon">12,7 cm SKC/34</a>
+					<a href="#z46skc34" class="ship__exist-weapon">12,7 cm SKC/34</a>
 				</div>
 
 				<div class="ship__info-row ship__info-row3">
@@ -467,9 +451,9 @@
 			</div>
 		</section>
 
-		<section class="ship">
+		<!-- <section class="ship">
 			<div class="ship__preview ship__preview--z6">
-				<h3 class="ship__header">Другие немецкие эсминцы</h3>
+				<h3 id="otherShips" class="ship__header">Другие немецкие эсминцы</h3>
 			</div>
 
 			<div class="other-ships container">
@@ -483,72 +467,72 @@
 					<div class="other-ships-elem other-ships-elem--z25"></div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="sources">
 
 			<div class="sources__preview">
-				<h3 class="sources__header">Список использованных материалов и литературы</h3>				
+				<h3 id="stuff" class="sources__header">Список использованных материалов и литературы</h3>				
 			</div>
 
 			<div class="sources__inner container">
 				<ul class="sources__list">
 					<li class="sources__list-elem">
-						<a href="https://wiki.wargaming.net/ru/Ship:Z-52" class="sources__link">
+						<a href="https://wiki.wargaming.net/ru/Ship:Z-52" class="sources__link links-decorator">
 							Z-52 (источник:Wargaming wiki)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://wiki.wargaming.net/ru/Ship:Z-46" class="sources__link">
+						<a href="https://wiki.wargaming.net/ru/Ship:Z-46" class="sources__link links-decorator">
 							Z-46 (источник:Wargaming wiki)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://wiki.wargaming.net/ru/Ship:Z-23" class="sources__link">
+						<a href="https://wiki.wargaming.net/ru/Ship:Z-23" class="sources__link links-decorator">
 							Z-23 (источник:Wargaming wiki)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://war-book.ru/eskadrennye-minonostsy-proekta-z36/" class="sources__link">
+						<a href="https://war-book.ru/eskadrennye-minonostsy-proekta-z36/" class="sources__link links-decorator">
 							Эскадренные миноносцы проекта "Z/36" (источник:war-book.ru)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://war-book.ru/eskadrennye-minonostsy-proekta-z42-germany/" class="sources__link">
+						<a href="https://war-book.ru/eskadrennye-minonostsy-proekta-z42-germany/" class="sources__link links-decorator">
 							Эскадренные миноносцы проекта "Z/42" (источник:war-book.ru)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://ru.wikipedia.org/wiki/12,7_cm_SKC/34" class="sources__link">
+						<a href="https://ru.wikipedia.org/wiki/12,7_cm_SKC/34" class="sources__link links-decorator">
 							12,7 cm SKC/34 (источник:Википедия)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="http://www.navweaps.com/Weapons/WNGER_59-48_skc36.php" class="sources__link">
+						<a href="http://www.navweaps.com/Weapons/WNGER_59-48_skc36.php" class="sources__link links-decorator">
 							15 cm/48 (5.9") Tbts KC/36 (источник:navweaps.com)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="https://en.wikipedia.org/wiki/3_cm_MK_303_Flak" class="sources__link">
+						<a href="https://en.wikipedia.org/wiki/3_cm_MK_303_Flak" class="sources__link links-decorator">
 							3 cm MK 303 Flak (источник:Википедия)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="http://www.navweaps.com/Weapons/WNGER_5-45_skc34.php" class="sources__link">
+						<a href="http://www.navweaps.com/Weapons/WNGER_5-45_skc34.php" class="sources__link links-decorator">
 							12.7 cm/45 (5") SK C/34 (источник:navweaps.com)
 						</a>
 					</li>
 
 					<li class="sources__list-elem">
-						<a href="http://www.navweaps.com/Weapons/WNGER_55_Gerat58.php" class="sources__link">
+						<a href="http://www.navweaps.com/Weapons/WNGER_55_Gerat58.php" class="sources__link links-decorator">
 							5.5 cm/77 (2.17") Gerät 58 (источник:navweaps.com)
 						</a>
 					</li>
@@ -569,5 +553,13 @@
 			<span class="footer__author">Ершов Александр 2020</span>
 		</section>
 	</footer>
+
+	<script
+  		src="https://code.jquery.com/jquery-3.5.1.js"
+  		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  		crossorigin="anonymous">
+  	</script>
+	<script src="src/js/animation.js"></script>
+	<script src="src/js/scroll.js"></script>
 </body>
 </html>

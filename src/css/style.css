@@ -46,6 +46,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.contents__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .contents__navigation-header {
   text-align: center;
   font-size: 36px;
@@ -99,6 +103,7 @@
   width: 70px;
   height: 70px;
   color: transparent;
+  transition-duration: 350ms;
 }
 .footer__contacts-elem--github {
   background-image: url("../../src/icons/svg_github.svg");
@@ -119,6 +124,9 @@
 .footer__contacts-elem--skype {
   background-image: url("../../src/icons/svg_skype.svg");
   background-size: cover;
+}
+.footer__contacts-elem:hover {
+  opacity: 0.5;
 }
 .footer__author {
   position: relative;
@@ -172,6 +180,59 @@ big {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
+.links-decorator {
+  position: relative;
+  text-decoration: none;
+}
+.links-decorator::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background: white;
+  transition: all 0.1s;
+}
+.links-decorator:hover::before {
+  width: 100%;
+  left: 0;
+  background: black;
+}
+.nav-back {
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 99;
+  font-size: 16px;
+  width: 150px;
+  /*height: 50px;*/
+  background-color: gray;
+  transition-duration: 350ms;
+  display: none;
+}
+.nav-back__link {
+  text-decoration: none;
+  color: white;
+}
+.nav-back:hover {
+  background-color: black;
+}
+.hidden {
+  display: none;
+}
+.links-decorator--white:hover::before {
+  background-color: white;
+}
+.links-decorator--white::before {
+  background: black;
 }
 
 .header {
@@ -663,6 +724,11 @@ big {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  transition-duration: 350ms;
+}
+.ship__exist-weapon:hover {
+  /*background-color: rgba(0,0,0,0.75);*/
+  background-color: gray;
 }
 .ship__info-row3 {
   display: flex;
@@ -729,7 +795,7 @@ big {
   padding-right: 50px;
 }
 .sources__link {
-  display: block;
+  /*display: block;*/
   font-size: 22px;
   color: black;
   text-decoration: none;
@@ -796,6 +862,59 @@ big {
   margin-left: auto;
   margin-right: auto;
 }
+.links-decorator {
+  position: relative;
+  text-decoration: none;
+}
+.links-decorator::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background: white;
+  transition: all 0.1s;
+}
+.links-decorator:hover::before {
+  width: 100%;
+  left: 0;
+  background: black;
+}
+.nav-back {
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 99;
+  font-size: 16px;
+  width: 150px;
+  /*height: 50px;*/
+  background-color: gray;
+  transition-duration: 350ms;
+  display: none;
+}
+.nav-back__link {
+  text-decoration: none;
+  color: white;
+}
+.nav-back:hover {
+  background-color: black;
+}
+.hidden {
+  display: none;
+}
+.links-decorator--white:hover::before {
+  background-color: white;
+}
+.links-decorator--white::before {
+  background: black;
+}
 .preview {
   position: relative;
   background: url("../../src/images/jpg_z-39_1-min.jpg");
@@ -831,6 +950,10 @@ big {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+18,ffffff+33,ffffff+80&0+0,0.8+9,1+13,1+34,0.8+44,0+100 */
   background-repeat: no-repeat;
   background-position: center;
+}
+.contents__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .contents__navigation-header {
   text-align: center;
@@ -1097,6 +1220,11 @@ big {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  transition-duration: 350ms;
+}
+.ship__exist-weapon:hover {
+  /*background-color: rgba(0,0,0,0.75);*/
+  background-color: gray;
 }
 .ship__info-row3 {
   display: flex;
@@ -1221,7 +1349,7 @@ big {
   padding-right: 50px;
 }
 .sources__link {
-  display: block;
+  /*display: block;*/
   font-size: 22px;
   color: black;
   text-decoration: none;
@@ -1247,6 +1375,7 @@ big {
   width: 70px;
   height: 70px;
   color: transparent;
+  transition-duration: 350ms;
 }
 .footer__contacts-elem--github {
   background-image: url("../../src/icons/svg_github.svg");
@@ -1267,6 +1396,9 @@ big {
 .footer__contacts-elem--skype {
   background-image: url("../../src/icons/svg_skype.svg");
   background-size: cover;
+}
+.footer__contacts-elem:hover {
+  opacity: 0.5;
 }
 .footer__author {
   position: relative;

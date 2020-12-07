@@ -27,3 +27,65 @@ big {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.links-decorator {
+	position: relative;
+	text-decoration: none;
+}
+
+.links-decorator::before {
+	content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background: white;
+    transition: all 0.1s;
+}
+
+.links-decorator:hover::before {
+	width: 100%;
+	left: 0;
+	background: black;
+}
+
+.nav-back {
+	top: 10px;
+	left: 10px;
+	position: fixed;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 99;
+	font-size: 16px;
+	width: 150px;
+	/*height: 50px;*/
+	background-color: gray;
+	transition-duration: 350ms;
+	display: none;
+}
+
+.nav-back__link {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-back:hover {
+	background-color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+.links-decorator--white:hover::before {
+	background-color: white;
+}
+
+.links-decorator--white::before {
+    background: black;
+}
