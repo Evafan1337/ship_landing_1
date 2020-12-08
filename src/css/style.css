@@ -37,6 +37,7 @@
 }
 .article-preview__capital {
   font-size: 48px;
+  /*// text-indent: 0;*/
 }
 
 .contents {
@@ -233,6 +234,9 @@ big {
 }
 .links-decorator--white::before {
   background: black;
+}
+.capital-letter {
+  font-size: 48px;
 }
 
 .header {
@@ -621,6 +625,7 @@ big {
   width: 49%;
 }
 .ship__info-header {
+  font-weight: bold;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -915,6 +920,9 @@ big {
 .links-decorator--white::before {
   background: black;
 }
+.capital-letter {
+  font-size: 48px;
+}
 .preview {
   position: relative;
   background: url("../../src/images/jpg_z-39_1-min.jpg");
@@ -1117,6 +1125,7 @@ big {
   width: 49%;
 }
 .ship__info-header {
+  font-weight: bold;
   margin-top: 0px;
   margin-bottom: 10px;
 }
