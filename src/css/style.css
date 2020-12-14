@@ -79,6 +79,12 @@
 .contents__additional-elem {
   margin-bottom: 3px;
 }
+.contents__navigation-elem-header {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 .contents__link {
   font-size: 24px;
 }
@@ -522,16 +528,23 @@ big {
 }
 .ship__preview--z52 {
   min-height: 800px;
+  /*// min-height: 9px;*/
   background: url("../../src/images/jpg_z-52_1.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  /*// background-size: cover;*/
+  /*background-size: contain;*/
+  /*// background-position-y: 75px;*/
   background-position-x: center;
 }
 .ship__preview--z46 {
   min-height: 750px;
+  /*// min-height: 9px;*/
   background: url("../../src/images/jpg_z46_preview.jpg");
   background-repeat: no-repeat;
+  /*// background-size: cover;*/
   background-size: contain;
+  /*// background-position-y: 75px;*/
   background-position-x: center;
 }
 .ship__preview--z6 {
@@ -614,6 +627,7 @@ big {
   height: 50%;
 }
 .ship__text {
+  text-align: justify;
   text-indent: 0;
 }
 .ship__text--z-23 {
@@ -640,6 +654,7 @@ big {
   justify-content: space-between;
 }
 .ship__weapon-text {
+  text-align: justify;
   color: white;
 }
 .ship__info-row2 {
@@ -991,6 +1006,12 @@ big {
 .contents__additional-elem {
   margin-bottom: 3px;
 }
+.contents__navigation-elem-header {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 .contents__link {
   font-size: 24px;
 }
@@ -1022,16 +1043,23 @@ big {
 }
 .ship__preview--z52 {
   min-height: 800px;
+  /*// min-height: 9px;*/
   background: url("../../src/images/jpg_z-52_1.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  /*// background-size: cover;*/
+  /*background-size: contain;*/
+  /*// background-position-y: 75px;*/
   background-position-x: center;
 }
 .ship__preview--z46 {
   min-height: 750px;
+  /*// min-height: 9px;*/
   background: url("../../src/images/jpg_z46_preview.jpg");
   background-repeat: no-repeat;
+  /*// background-size: cover;*/
   background-size: contain;
+  /*// background-position-y: 75px;*/
   background-position-x: center;
 }
 .ship__preview--z6 {
@@ -1114,6 +1142,7 @@ big {
   height: 50%;
 }
 .ship__text {
+  text-align: justify;
   text-indent: 0;
 }
 .ship__text--z-23 {
@@ -1140,6 +1169,7 @@ big {
   justify-content: space-between;
 }
 .ship__weapon-text {
+  text-align: justify;
   color: white;
 }
 .ship__info-row2 {
